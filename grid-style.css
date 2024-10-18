@@ -208,6 +208,24 @@ h2, h3, h4, h5, h6 {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         transition: background-color 1s;
     }
+
+    .right-grid-container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr; 
+    }
+
+    .left-info-bar {
+        grid-column: 1 / 2;
+        background-color: rgb(193, 223, 250, 0.6);
+    }
+    
+    .right-info-bar {
+        grid-column: 2 / 3;
+        background-color: rgb(202, 255, 234, 0.6);
+        opacity: 0.8;
+    }
 }
 
 @media (max-width: 481px) {
